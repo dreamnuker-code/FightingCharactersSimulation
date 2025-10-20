@@ -135,7 +135,7 @@ void game(List<Character> chars) {
       ac1 = Random().nextInt(2);
       switch(ac0) {
         case 0: characters[1].hp = characters[1].hp! - characters[0].normalDamage!; typing(pinkPen("Character ${characters[0].name} attacked ${characters[1].name} and took ${characters[0].normalDamage}")); break; // characters[1].hp! - characters[0].normalDamage!, poniewaz int?, tak, ! to "jest!!! jest!!!", nie "nie jest"
-        case 1: characters[1].hp = characters[1].hp! - (characters[0].superPower["dmg"] as int); characters[0].breaked = true; typing(critPen("Character ${characters[0].name} used their superpower ${(characters[0].superPower["name"] as String)} on ${characters[1].name} and took ${(characters[1].superPower["dmg"] as int)}")); break;
+        case 1: characters[1].hp = characters[1].hp! - (characters[0].superPower["dmg"] as int); characters[0].breaked = true; typing(critPen("Character ${characters[0].name} used their superpower ${(characters[0].superPower["name"] as String)} on ${characters[1].name} and took ${(characters[0].superPower["dmg"] as int)}")); break;
       }
       switch(ac1) {
         case 0: characters[0].hp = characters[0].hp! - characters[1].normalDamage!; typing(pinkPen("Character ${characters[1].name} attacked ${characters[0].name} and took ${characters[0].normalDamage}")); break;// characters[1].hp! - characters[0].normalDamage!, poniewaz int?, tak, ! to "jest!!! jest!!!", nie "nie jest"
@@ -146,7 +146,7 @@ void game(List<Character> chars) {
       ac0 = Random().nextInt(2);
       switch(ac0) {
         case 0: characters[1].hp = characters[1].hp! - characters[0].normalDamage!; typing(pinkPen("Character ${characters[0].name} attacked ${characters[1].name} and took ${characters[0].normalDamage}")); break; // characters[1].hp! - characters[0].normalDamage!, poniewaz int?, tak, ! to "jest!!! jest!!!", nie "nie jest"
-        case 1: characters[1].hp = characters[1].hp! - (characters[0].superPower["dmg"] as int); characters[0].breaked = true; typing(critPen("Character ${characters[0].name} used their superpower ${(characters[0].superPower["name"] as String)} on ${characters[1].name} and took ${(characters[1].superPower["dmg"] as int)}")); break;
+        case 1: characters[1].hp = characters[1].hp! - (characters[0].superPower["dmg"] as int); characters[0].breaked = true; typing(critPen("Character ${characters[0].name} used their superpower ${(characters[0].superPower["name"] as String)} on ${characters[1].name} and took ${(characters[0].superPower["dmg"] as int)}")); break;
       }
       typing(lightPen("${characters[1].name} cannot attack."));
       characters[1].breaked = false;
@@ -155,7 +155,7 @@ void game(List<Character> chars) {
       ac1 = Random().nextInt(2);
       switch(ac1) {
         case 0: characters[0].hp = characters[0].hp! - characters[1].normalDamage!; typing(pinkPen("Character ${characters[1].name} attacked ${characters[0].name} and took ${characters[1].normalDamage}")); break; // characters[1].hp! - characters[0].normalDamage!, poniewaz int?, tak, ! to "jest!!! jest!!!", nie "nie jest"
-        case 1: characters[0].hp = characters[0].hp! - (characters[1].superPower["dmg"] as int); characters[1].breaked = true; typing(critPen("Character ${characters[1].name} used their superpower ${(characters[1].superPower["name"] as String)} on ${characters[0].name} and took ${(characters[0].superPower["dmg"] as int)}")); break;
+        case 1: characters[0].hp = characters[0].hp! - (characters[1].superPower["dmg"] as int); characters[1].breaked = true; typing(critPen("Character ${characters[1].name} used their superpower ${(characters[1].superPower["name"] as String)} on ${characters[0].name} and took ${(characters[1].superPower["dmg"] as int)}")); break;
       }
       typing(lightPen("${characters[0].name} cannot attack."));
       characters[0].breaked = false;
